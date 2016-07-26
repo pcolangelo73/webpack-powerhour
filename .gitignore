@@ -17,3 +17,8 @@ jsconfig.json
 
 bundle.js
 bundle.js.map
+
+**/public/css/*
+**/public/javascript/*
+**/public/images/*
+**/public/fonts/*
