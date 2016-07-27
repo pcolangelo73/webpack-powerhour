@@ -15,7 +15,5 @@ P05 - Use define plugin to set NODE_ENV for react
     - Use provide plugin to load moment
     - Use uglify plugin to set uglify options
 
-P06 - Hot Reloader?
-
-P07 - Hashing?
+P06 - Hashing?
 
