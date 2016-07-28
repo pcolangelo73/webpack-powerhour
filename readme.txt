@@ -1,3 +1,10 @@
+P00 - History of build systems
+    - Hangups
+    - When to use
+    - Things its missing
+    - Who built it/supports it
+    - Roadmap
+
 P01 - Basic build setup
 
 P02 - Add development server and react support
@@ -15,5 +22,7 @@ P05 - Use define plugin to set NODE_ENV for react
     - Use provide plugin to load moment
     - Use uglify plugin to set uglify options
 
-P06 - Hashing?
-
+P06 - Add clean script
+    - Hashing
+    - HtmlWebpackPlugin
+    - assets-webpack-plugin
