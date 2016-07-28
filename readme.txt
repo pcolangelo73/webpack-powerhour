@@ -1,10 +1,3 @@
-P00 - History of build systems
-    - Hangups
-    - When to use
-    - Things its missing
-    - Who built it/supports it
-    - Roadmap
-
 P01 - Basic build setup
 
 P02 - Add development server and react support
@@ -26,3 +19,11 @@ P06 - Add clean script
     - Hashing
     - HtmlWebpackPlugin
     - assets-webpack-plugin
+
+Other 
+    - History of build systems
+    - Hangups
+    - When to use
+    - Things its missing
+    - Who built it/supports it
+    - Roadmap
