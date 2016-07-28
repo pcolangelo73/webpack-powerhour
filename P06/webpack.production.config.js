@@ -8,6 +8,7 @@ const webpack = require('webpack');
 const path = require('path');
 const loaders = require('./webpack.loaders');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: [
@@ -16,7 +17,7 @@ module.exports = {
   ],
   output: {
     path: path.join(__dirname, 'public'),
-    filename: 'js/bundle.js'
+    filename: 'js/[chunkhash].bundle.js'
   },
   resolve: {
     extensions: ['', '.js', '.jsx']
@@ -25,7 +26,7 @@ module.exports = {
     loaders: loaders
   },
   plugins: [
-    new ExtractTextPlugin('css/bundle.css', {
+    new ExtractTextPlugin('css/[chunkhash].bundle.css', {
       allChunks: true
     }),
     new webpack.DefinePlugin({
@@ -43,6 +44,9 @@ module.exports = {
 			output: {
 				comments: false
 			}
-		})
-  ],
+		}),
+    new HtmlWebpackPlugin({
+      template: 'template.html'
+    })
+  ]
 };

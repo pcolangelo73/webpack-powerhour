@@ -19,6 +19,6 @@ bundle.js
 bundle.js.map
 
 **/public/css/*
-**/public/javascript/*
+**/public/js/*
 **/public/images/*
 **/public/fonts/*

@@ -8,6 +8,7 @@ const webpack = require('webpack');
 const path = require('path');
 const loaders = require('./webpack.loaders');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: [
@@ -43,6 +44,9 @@ module.exports = {
     }),
     new webpack.ProvidePlugin({
       'moment': 'moment'
+    }),
+    new HtmlWebpackPlugin({
+      template: 'template.html'
     })
   ],
   debug: true
