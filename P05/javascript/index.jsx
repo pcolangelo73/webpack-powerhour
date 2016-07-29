@@ -12,7 +12,7 @@ const App = () => (
     <div className="some-image-thing"></div>
 
     {/* The webpack ProvidePlugin allows us to use `moment` here even though it is not attached to window */}
-    <div>Moment formatted date: {moment().format('YYYY-MM-DD')}</div>
+    <div>Moment formatted date: {moment().format('YYYY-MM-DD HH:mm:ss')}</div>
 
     {/* process.env.NODE_ENV from webpack DefinePlugin */}
     <div>The app was buit in NODE_ENV: {process.env.NODE_ENV}</div>
